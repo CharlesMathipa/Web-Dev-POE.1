@@ -31,7 +31,38 @@
     </nav>
 </header>
 </body>
+<main>
+    <form action="cart.html" method="POST">
+  <h2>Red Rose Assorted Bouquet</h2>
+  <p>Price: <strong>R 1,100</strong></p>
 
+  <!-- Stem Count Selection -->
+  <fieldset>
+    <legend>1. Select Stem Count:</legend>
+    <label><input type="radio" name="stem_count" value="20" checked> 20 Stems (R 1,100)</label><br>
+    <label><input type="radio" name="stem_count" value="40"> 40 Stems (R 1,900)</label><br>
+    <label><input type="radio" name="stem_count" value="60"> 60 Stems (R 2,700)</label><br>
+    <label><input type="radio" name="stem_count" value="80"> 80 Stems (R 3,500)</label><br>
+    <label><input type="radio" name="stem_count" value="100"> 100 Stems (R 4,600)</label>
+  </fieldset>
+
+  <!-- Add-On Selection -->
+  <fieldset>
+    <legend>2. Optional Add-Ons:</legend>
+    <label><input type="checkbox" name="addon_gypsophila" value="200"> Add Gypsophila (+R200 per 20 stems)</label><br>
+    <label><input type="checkbox" name="addon_vase" value="150"> Add Clear Glass Vase (+R150)</label>
+  </fieldset>
+
+  <!-- Delivery Date -->
+  <fieldset>
+    <legend>3. Select Delivery Date:</legend>
+    <label for="delivery-date">Date:</label>
+    <input type="date" id="delivery-date" name="delivery_date" required>
+  </fieldset>
+
+  <button type="submit">Add To Cart - R 1,100</button>
+</form>
+</main>
 
 <footer>
     <section>
